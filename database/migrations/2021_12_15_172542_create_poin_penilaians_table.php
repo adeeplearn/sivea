@@ -31,7 +31,7 @@ class CreatePoinPenilaiansTable extends Migration
      */
     public function down()
     {
-        Schema::table('kriteria', function (Blueprint $table) {
+        Schema::table('poin_penilaian', function (Blueprint $table) {
             $table->dropForeign('kriteria_id');
             $table->dropColumn('kriteria_id');
         });
